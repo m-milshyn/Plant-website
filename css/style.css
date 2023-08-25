@@ -1,0 +1,440 @@
+.wrapper {
+    background: #FCF8F6;
+    height: max-content;
+}
+.header {}
+.header__container {
+    max-width: 1180px;
+    margin: 0px auto;
+    padding: 0px 10px;
+}
+
+.header__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+.header__logo {
+    text-transform: uppercase;
+    font-family: 'NAMU-Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 42px;
+    color: #A55123;
+}
+.header__nav {
+    text-transform: capitalize;
+    font-family: 'Poppins-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 38px;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.header__nav a {
+    margin-right: 34px;
+    text-decoration: none;
+    color: #000000;
+}
+.header__nav a:last-child {
+    margin-right: 0;
+}
+
+.header__nav .active {
+    color: #A55123;
+}
+
+.content1 {
+    max-width: 1180px;
+    height: 600px;
+    margin: 0px auto;
+    padding: 0px 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    animation: animation-block1 3s;
+}
+.content1__block1 {
+    height: max-content;
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.block1__title {
+    font-family: 'NAMU-Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 62px;
+    margin-bottom: 34px;
+    position: relative;
+}
+.block1__title:after{
+    /*height: 100px;
+    width: 100px;
+    top: 100px;
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url(/images/underline2.png);
+    background-size: 100% 12px;*/
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    left: 160px;
+    height: 22px;
+    width: 200px;
+    display: block;
+    background-image: url(../images/underline2.png);
+    background-size: 100% 12px;
+    background-repeat: no-repeat;
+    animation: anim-underline1 2s;
+}
+@keyframes anim-underline1 {
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.svg__circleline {
+    position: absolute;
+    top: 100px;
+    left: -8px;
+    animation: animation-circleline1 2s;
+}
+
+@keyframes animation-circleline1 {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.block1__title span {
+    text-transform: uppercase;
+    color: #A55123;
+}
+.block1__text {
+    font-family: 'Poppins-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 45px;
+    color: #000000;
+    margin-bottom: 45px;
+
+}
+.block__btn {
+    display: flex;
+    width: 100%;
+}
+.block__btn a{
+    text-transform: capitalize;
+    width: 40%;
+    height: 60px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #98AD8E;
+    border-radius: 10px;
+    transition: background-color .3s ease 0s;
+}
+.block__btn a:hover {
+    cursor: pointer;
+    background-color: #72a15c;
+}
+.block__btn span {
+    color: #FCF8F6;
+    font-family: 'Poppins-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 60px;
+}
+.content__img {
+    position: absolute;
+    top: -20px;
+    right: 50px;
+    pointer-events: none;
+}
+.content__img img {
+    width: auto;
+    height: 600px;
+}
+
+@keyframes animation-block1{
+    0% {
+        height: 1800px;
+        opacity: 0;
+    }
+    50% {
+        height: 600px;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* SECOND BLOCK ON SITE */
+
+.content2 .title {
+    max-width: 1180px;
+    margin: 160px auto 50px auto;
+    padding: 0px 10px;
+}
+.content2 .title span {
+    font-family: 'Poppins-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+.content2__block2 {
+    max-width: 1180px;
+    height: 600px;
+    margin: 0px auto;
+    padding: 0px 10px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.svg__circleline2 {
+    position: absolute;
+    top: 85px;
+    right: 280px;
+}
+
+.svg__underline2 {
+        position: absolute;
+        top: 215px;
+        right: 60px;
+}
+
+.textblock2 {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
+
+.block2__title {
+    font-family: 'NAMU-Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 62px;
+    margin-bottom: 34px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.block2__text {
+    font-family: 'Poppins-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35px;
+    color: #000000;
+    margin-bottom: 45px;
+}
+
+.content2__img {
+    pointer-events: none;
+    position: absolute;
+    left: -70px;
+}
+
+.content2__img img {
+    height: 600px;
+    width: auto;
+}
+
+/*----------------------*/
+/* THIRD BLOCK ON SITE */
+
+.content3__block2 {
+    max-width: 1180px;
+    height: 600px;
+    margin: 100px auto;
+    padding: 0px 10px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.svg__circleline3 {
+    position: absolute;
+    top: 90px;
+    right: 320px;
+}
+
+.svg__underline3 {
+    position: absolute;
+    top: 209px;
+    right: -15px;
+}
+
+.textblock3 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.content3__img {
+    pointer-events: none;
+    position: absolute;
+    left: -60px;
+}
+
+.content3__img img {
+    height: 600px;
+    width: auto;
+}
+/*----------------------*/
+/* FOURTH BLOCK ON SITE */
+
+.content4__block2 {
+    max-width: 1180px;
+    height: 600px;
+    margin: 100px auto;
+    padding: 0px 10px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.svg__underline4 {
+    position: absolute;
+    top: 202px;
+    left: 50px;
+}
+
+.textblock4 {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 4;
+    text-align: right;
+}
+
+.block4__title {
+    font-family: 'NAMU-Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 62px;
+    margin-bottom: 34px;
+    position: relative;
+    text-transform: uppercase;
+    background-color: #fcf8f681;
+    border-radius: 10px;
+}
+
+.content4__img {
+    pointer-events: none;
+    position: absolute;
+    left: 590px;
+}
+.content4__img img {
+    height: 600px;
+    width: auto;
+}
+
+/*----------------------*/
+/* FIFTH BLOCK ON SITE */
+.content5__block2 {
+    max-width: 1180px;
+    height: 600px;
+    margin: 0 auto 0 auto;
+    padding: 0px 10px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.svg__circleline5 {
+    position: absolute;
+    top: 80px;
+    left: 10px;
+}
+
+.svg__underline5 {
+    position: absolute;
+    top: 202px;
+    left: 30px;
+}
+
+.textblock5 {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.content5__img {
+    pointer-events: none;
+    position: absolute;
+    top: -30px;
+    left: 670px;
+}
+.content5__img img {
+    height: 600px;
+    width: auto;
+}
+.block__btn.right {
+    justify-content: end;
+}
+/*---------------------*/
+
+/*--------------------------FONTS--------------------------*/
+
+@font-face {
+    font-family: "NAMU-Pro";
+    src: url("../fonts/NAMU-Pro.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Poppins-Light";
+    src: url("../fonts/Poppins-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Poppins-Thin";
+    src: url("../fonts/Poppins-Thin.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*---------------------------------------------------------*/
